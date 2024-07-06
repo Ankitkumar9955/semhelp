@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Design and Programming - SRMHelp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            position: relative;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: -10px;
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img class="logo" src="4913181.jpg" alt="SEM Help Logo">
+            <h1><a href="index.html" id="home-link" style="color: white; text-decoration: none;">Semhelp.com</a></h1>
+        </div>
+        <nav class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="advance_calculus_algebra1.html">Advance Calculus and Algebra 1</a>
+                <a href="advance_calculus_algebra2.html">Advance Calculus and Algebra 2</a>
+                <a href="computational_biology.html">Computational Biology</a>
+                <a href="oodp.html">Object Oriented Design and Programming</a>
+                <a href="EEE.html">EEE</a>
+                <a href="POE.html">POE</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="semiconductor.html">Semiconductor Physics</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="question-bank">
+                <!-- Add 10 question items here -->
+                <div class="question-item" data-subject="Object Oriented Design and Programming" data-date="2024-01-01">
+                    <img src="oodp1.jpg" alt="Question 1">
+                    <div class="item-details">
+                        <h3>Object Oriented Design and Programming</h3>
+                        <p>Chapter 1, Chapter 2</p>
+                        <p>Exam Date: 2024-01-01</p>
+                        <a href="oodp1.jpg" style="display: block; text-align: center; background-color: #333; color: white; text-decoration: none; padding: 10px; border-radius: 5px; transition: background-color 0.3s ease;">View Details</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+      <section style="margin-top: 50px; text-align: center;">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <span>Crafted by</span>
+                <a href="https://www.linkedin.com/in/ankit-kumar-sahu9955" style="margin-left: 5px; text-decoration: none; color: #1cbbb4;">ANKIT KUMAR</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SRMHelp. All rights reserved.</p>
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </div>
+    </footer>
+
+    <!-- Modal for detailed view -->
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-details">
+            <span class="close-button">&times;</span>
+            <!-- Detailed view content will be inserted here -->
+        </div>
+    </div>
+
+    <button id="back-to-top">&uarr;</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
